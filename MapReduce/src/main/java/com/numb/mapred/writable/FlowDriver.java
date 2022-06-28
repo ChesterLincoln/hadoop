@@ -1,4 +1,4 @@
-package com.numb.mapred.partition;
+package com.numb.mapred.writable;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -30,7 +30,7 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
-        job.setPartitionerClass(ProvincePartition.class);
+        job.setPartitionerClass(FlowPartition.class);
         job.setNumReduceTasks(6);
 
         FileInputFormat.setInputPaths(job, new Path("src/main/resources/flowInput"));

@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Partitioner;
 /**
  * @author gaoxiangyu
  */
-public class ProvincePartition extends Partitioner<FlowBean, Text> {
+public class FlowPartition extends Partitioner<FlowBean, Text> {
 
     @Override
     public int getPartition(FlowBean flowBean, Text text, int i) {

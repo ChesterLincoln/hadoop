@@ -1,4 +1,4 @@
-package com.numb.mapred.partition;
+package com.numb.mapred.writable;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;

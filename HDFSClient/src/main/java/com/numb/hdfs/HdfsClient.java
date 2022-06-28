@@ -21,6 +21,8 @@ import java.util.Arrays;
  * 参数优先级：（从低到高）
  * hdfs-default.xml -> hdfs-site.xml -> 在项目资源目录下的配制文件 ->代码里的配制Configuration
  * 就近原则
+ *
+ * @author gaoxiangyu
  */
 public class HdfsClient {
 
